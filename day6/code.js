@@ -22,7 +22,8 @@ let fishCounters = fish.reduce((result, item) => {
     result[item] = (result[item] || 0) + 1
     return result;
 }, { ...Array(9).fill(BigInt(0)) });
-console.log(fishCounters)
+
+console.log({ ...Array(9).fill(BigInt(0)) }, fishCounters)
 
 days = 1;
 while (days <= 256) {
